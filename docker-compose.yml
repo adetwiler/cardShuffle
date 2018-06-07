@@ -1,0 +1,9 @@
+version: '2'
+services:
+  web:
+    build: .
+    command: php -S 0.0.0.0:9000 -t .
+    ports:
+      - 9000:9000
+    volumes:
+      - .:/app
